@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="robots" content="all">
+  <meta name="description" content="AI인간경영연구소 - AI 시대의 인간 중심 경영 연구소. 인간의 본질에 기반한 경영 통찰을 제공합니다.">
+  <meta property="og:title" content="AI인간경영연구소 | AI 시대 인간 중심 경영">
+  <meta property="og:description" content="AI 시대에도 변하지 않는 인간 경영의 본질을 연구합니다.">
+  <meta property="og:url" content="https://www.thebest-f.com">
+  <meta property="og:type" content="website">
+  <title>AI인간경영연구소 | AI 시대 인간 중심 경영</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!-- 최상단 배너 -->
+<div class="top_banner" id="topBanner">
+  <p>더 나은 경험을 위해 최신 브라우저(크롬, 사파리 등)로 접속해주세요.</p>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header id="mainHeader">
+  <div class="wrapper">
+    <h1><a href="/">AI<span>인간경영</span>연구소</a></h1>
+    <nav>
+      <ul>
+        <li><a href="#about">연구소는?</a></li>
+        <li class="has-sub">
+          <a href="#service">서비스 소개</a>
+          <ul class="submenu">
+            <li><a href="#service">AI 경영 컨설팅</a></li>
+            <li><a href="#service">조직 심리 분석</a></li>
+            <li><a href="#service">리더십 개발</a></li>
+          </ul>
+        </li>
+        <li class="has-sub">
+          <a href="#column">칼럼</a>
+          <ul class="submenu">
+            <li><a href="#column">AI 경영 인사이트</a></li>
+            <li><a href="#column">인간경영 연구</a></li>
+          </ul>
+        </li>
+        <li><a href="#faq">FAQ</a></li>
+        <li class="nav-cta"><a href="#contact">문의하기</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" id="hamburger" onclick="openMobileNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- ===== MOBILE NAV ===== -->
+<div class="mobile-nav" id="mobileNav" onclick="closeMobileNavOutside(event)">
+  <div class="mobile-nav-panel">
+    <div class="mobile-nav-close" onclick="closeMobileNav()">&#10005;</div>
+    <ul>
+      <li><a href="#about" onclick="closeMobileNav()">연구소는?</a></li>
+      <li><a href="#service" onclick="closeMobileNav()">서비스 소개</a></li>
+      <li><a href="#column" onclick="closeMobileNav()">칼럼</a></li>
+      <li><a href="#faq" onclick="closeMobileNav()">FAQ</a></li>
+    </ul>
+    <div class="mobile-cta">
+      <a href="#contact" onclick="closeMobileNav()">문의하기</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="wrapper">
+    <div class="hero-text fadeInUp">
+      <span class="hero-badge">AI 시대, 인간 중심 경영</span>
+      <h2>
+        <strong>AI인간경영연구소</strong>를<br>
+        처음 아셨나요?<br>
+        그렇다면 아직 문의하지 마세요.
+      </h2>
+      <p>
+        AI가 대체할 수 없는 인간의 본질,<br>
+        그 위에 세운 경영 통찰을<br>
+        <u>3분이면 확인하실 수 있습니다.</u>
+      </p>
+      <div class="hero-btns">
+        <a href="#about" class="btn-primary">연구소 살펴보기</a>
+        <a href="#contact" class="btn-outline">문의하기</a>
+      </div>
+    </div>
+    <div class="hero-visual fadeInUp delay-2">
+      <div class="hero-card">
+        <div class="stat-row">
+          <div class="stat-item">
+            <span class="stat-num" id="cnt1">0</span>
+            <div class="stat-label">연구 보고서</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" id="cnt2">0</span>
+            <div class="stat-label">컨설팅 사례</div>
+          </div>
+        </div>
+        <hr class="divider">
+        <p class="card-desc">
+          AI 시대에도 변하지 않는<br>
+          <strong style="color:var(--accent)">인간 경영의 본질</strong>을 연구합니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="stats-section" id="stats">
+  <div class="wrapper">
+    <div class="sec-tit fadeInUp">
+      <em>Results</em>
+      <h3>국내 AI 인간경영 분야<br><strong>AI인간경영연구소</strong></h3>
+      <p class="info">실제 현장에서 검증된 연구와 컨설팅 성과</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card fadeInUp delay-1">
+        <span class="num" data-target="150">0</span><span class="unit">+</span>
+        <div class="label">AI경영 연구 보고서</div>
+        <div class="sub">축적된 연구 콘텐츠</div>
+      </div>
+      <div class="stat-card fadeInUp delay-2">
+        <span class="num" data-target="300">0</span><span class="unit">+</span>
+        <div class="label">컨설팅 대상 기업</div>
+        <div class="sub">다양한 업종·규모 경험</div>
+      </div>
+      <div class="stat-card fadeInUp delay-3">
+        <span class="num" data-target="97">0</span><span class="unit">%</span>
+        <div class="label">재계약률</div>
+        <div class="sub">한번 맡긴 기업은 떠나지 않습니다</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about-section" id="about">
+  <div class="wrapper">
+    <div class="about-inner">
+      <div class="about-text fadeInUp">
+        <span class="label">About</span>
+        <h3>저희가 제일 잘한다는 말은<br>하지 않겠습니다.<br><strong>결과물을 먼저 보세요.</strong></h3>
+        <p class="about-desc">
+          AI인간경영연구소는 인공지능이 급속도로 발전하는 시대에,
+          <strong>변하지 않는 인간의 본질적 가치</strong>에 기반한 경영 연구를 합니다.
+        </p>
+        <p class="about-desc">
+          기술이 아무리 발전해도 조직을 이끄는 것은 결국 사람입니다.
+          우리는 그 사람의 심리, 동기, 관계에 집중하여
+          지속 가능한 경영 통찰을 제공합니다.
+        </p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="icon">&#129504;</div>
+            <div class="content">
+              <strong>AI &times; 인간심리 융합 연구</strong>
+              <span>기술과 인간을 함께 이해하는 복합적 접근</span>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="icon">&#128202;</div>
+            <div class="content">
+              <strong>데이터 기반 경영 인사이트</strong>
+              <span>직관이 아닌 근거가 있는 경영 조언</span>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="icon">&#129309;</div>
+            <div class="content">
+              <strong>현장 밀착형 컨설팅</strong>
+              <span>이론이 아닌 실제 현장에서 검증된 방법론</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fadeInUp delay-2">
+        <div class="about-img-box">
+          <h4>AI 시대, 왜 인간경영인가?</h4>
+          <p>
+            ChatGPT가 보고서를 쓰고, AI가 의사결정을 도와줘도
+            결국 조직의 성과는 <strong style="color:rgba(255,255,255,0.95)">사람 간의 신뢰와 동기</strong>에서 나옵니다.
+            <br><br>
+            저희는 이 본질을 연구하고,
+            대표님의 조직에 맞게 적용해 드립니다.
+          </p>
+          <div class="about-keywords">
+            <span>인간심리</span>
+            <span>조직행동</span>
+            <span>AI 융합</span>
+            <span>리더십</span>
+            <span>동기이론</span>
+            <span>조직문화</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICE ===== -->
+<section class="service-section" id="service">
+  <div class="wrapper">
+    <div class="sec-tit fadeInUp">
+      <em>Service</em>
+      <h3>어떤 서비스가 필요하세요?</h3>
+      <p class="info">대표님 상황에 맞는 서비스를 선택해 드립니다</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-card fadeInUp delay-1">
+        <div class="s-icon">&#129302;</div>
+        <h4>AI 경영 전환 컨설팅</h4>
+        <p>AI 도입이 막막한 중소기업&middot;스타트업을 위한 단계별 AI 경영 전환 로드맵을 제공합니다. 기술보다 사람을 먼저 이해하는 방식으로 접근합니다.</p>
+        <a href="#contact" class="s-link">자세히 알아보기</a>
+      </div>
+      <div class="service-card fadeInUp delay-2">
+        <div class="s-icon">&#129513;</div>
+        <h4>조직 심리 &amp; 리더십 개발</h4>
+        <p>팀 갈등, 소통 문제, 리더십 부재로 고민하는 조직에 심리학 기반의 조직 진단과 맞춤형 리더십 개발 프로그램을 제공합니다.</p>
+        <a href="#contact" class="s-link">자세히 알아보기</a>
+      </div>
+      <div class="service-card fadeInUp delay-3">
+        <div class="s-icon">&#128218;</div>
+        <h4>AI인간경영 교육&middot;강연</h4>
+        <p>기업 임직원, 경영자 모임, 대학 등에서 AI 시대의 인간 중심 경영을 주제로 강연 및 교육 프로그램을 운영합니다.</p>
+        <a href="#contact" class="s-link">강연 문의하기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COLUMN ===== -->
+<section class="column-section" id="column">
+  <div class="wrapper">
+    <div class="sec-tit fadeInUp">
+      <em>Column</em>
+      <h3>AI인간경영 최신 인사이트</h3>
+      <p class="info">결과물을 먼저 보세요. 가치가 느껴지시면 그때 연락주세요.</p>
+    </div>
+    <div class="column-grid">
+      <div class="column-card fadeInUp delay-1">
+        <div class="thumb" style="background:#f0fdfa;">&#128214;</div>
+        <div class="c-body">
+          <span class="c-tag">AI경영</span>
+          <h4>ChatGPT 도입했는데 왜 직원들이 쓰지 않을까?</h4>
+          <p>기술 도입에 앞서 반드시 확인해야 할 조직 심리 3가지. AI 전환에 실패하는 90%의 기업이 놓치는 것.</p>
+        </div>
+      </div>
+      <div class="column-card fadeInUp delay-2">
+        <div class="thumb" style="background:#fef3c7;">&#129504;</div>
+        <div class="c-body">
+          <span class="c-tag">인간경영</span>
+          <h4>AI가 대체 못하는 리더의 역할은 무엇인가</h4>
+          <p>의사결정, 공감, 비전 제시. AI 시대에 리더가 집중해야 할 진짜 역할과 그 방법론을 연구합니다.</p>
+        </div>
+      </div>
+      <div class="column-card fadeInUp delay-3">
+        <div class="thumb" style="background:#ede9fe;">&#127970;</div>
+        <div class="c-body">
+          <span class="c-tag">조직문화</span>
+          <h4>MZ세대 직원 이탈을 막는 조직문화 설계법</h4>
+          <p>연봉이 아닌 의미와 성장. MZ세대가 머무는 조직이 가진 공통적인 문화 요소를 분석합니다.</p>
+        </div>
+      </div>
+    </div>
+    <div class="column-more fadeInUp">
+      <a href="https://thebest-f.blogspot.com" target="_blank">칼럼 더 보기 &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PHILOSOPHY ===== -->
+<section class="philosophy-section" id="philosophy">
+  <div class="wrapper">
+    <div class="philosophy-inner">
+      <div class="philosophy-text fadeInUp">
+        <span class="label">Philosophy</span>
+        <h3>AI인간경영연구소<br>대표 철학</h3>
+        <div class="philo-list">
+          <div class="philo-item">
+            <div class="philo-num">첫째</div>
+            <div class="philo-content">
+              <strong>영업 전화 자체가 없습니다.</strong>
+              <p>소문을 듣고 찾아오신 분, 콘텐츠를 보고 가치를 느끼신 분과만 함께합니다. 먼저 연락드리지 않습니다.</p>
+            </div>
+          </div>
+          <div class="philo-item">
+            <div class="philo-num">둘째</div>
+            <div class="philo-content">
+              <strong>성실한 문의에 먼저 회신합니다.</strong>
+              <p>문의 양식을 성실히 작성해 주신 분께 먼저 연락드립니다. 대표님의 사업 의지를 가장 중요하게 봅니다.</p>
+            </div>
+          </div>
+          <div class="philo-item">
+            <div class="philo-num">셋째</div>
+            <div class="philo-content">
+              <strong>성공시킬 수 없는 경우엔 솔직히 말합니다.</strong>
+              <p>맞지 않는 방향이라면 거절합니다. 대표님도 손해, 저희도 손해이기 때문입니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="philosophy-quote fadeInUp delay-2">
+        <blockquote>
+          아직 문의하지 않으셔도 됩니다.<br>
+          홈페이지를 충분히 둘러보시고,<br>
+          저희가 대표님의 사업을 이해할 수 있을지,<br>
+          대표님도 저희 방식에 동의하시는지<br>
+          먼저 판단해주세요.<br><br>
+          <strong>함께할 만하다고 느끼셨다면<br>그때 이야기를 들려주세요.</strong>
+        </blockquote>
+        <div class="q-author">&mdash; 이현정 대표</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq-section" id="faq">
+  <div class="wrapper">
+    <div class="sec-tit fadeInUp">
+      <em>Q&amp;A</em>
+      <h3><strong>궁금한 점이 있으신가요?</strong></h3>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>컨설팅 후 방치되는 건 아닌가요?</span>
+          <span class="arrow">+</span>
+        </div>
+        <div class="faq-a">
+          아닙니다. 단톡방, 월별 보고, 월별 전략 수정으로 운영합니다. 경영 개선은 한 번에 끝나는 일이 아니기 때문에, 지속적인 모니터링과 피드백을 함께 드립니다.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>작은 스타트업이나 1인 기업도 도움이 될까요?</span>
+          <span class="arrow">+</span>
+        </div>
+        <div class="faq-a">
+          네, 오히려 작을수록 대표의 리더십과 조직 문화가 더 큰 영향을 미칩니다. 소규모 조직에서 올바른 경영 기반을 잡는 것이 나중에 훨씬 큰 차이를 만듭니다.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>비용이 부담스럽습니다.</span>
+          <span class="arrow">+</span>
+        </div>
+        <div class="faq-a">
+          컨설팅보다 교육 프로그램이 더 경제적인 선택일 수 있습니다. 먼저 칼럼과 콘텐츠를 무료로 충분히 접하신 후, 가치를 느끼신다면 그때 문의해 주세요.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>AI 도구를 전혀 모르는데도 도움받을 수 있나요?</span>
+          <span class="arrow">+</span>
+        </div>
+        <div class="faq-a">
+          당연히 가능합니다. AI 도구보다 먼저 경영의 방향과 사람을 이해하는 것이 중요합니다. 기초부터 단계적으로 도와드립니다.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>모든 기업을 받을 수 있나요?</span>
+          <span class="arrow">+</span>
+        </div>
+        <div class="faq-a">
+          죄송합니다. 성공시킬 자신 없는 케이스는 솔직하게 말씀드리고 거절합니다. 단기 계약보다 장기적으로 함께 성장할 파트너를 찾습니다.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-section" id="contact">
+  <div class="wrapper">
+    <h3 class="fadeInUp">
+      국내 AI인간경영 분야<br>
+      <strong style="color:#32e0c4">AI인간경영연구소</strong>
+    </h3>
+    <p class="fadeInUp delay-1">
+      충분히 살펴보셨다면, 이제 대화를 나눠봅시다.<br>
+      대표님의 조직 이야기를 들려주세요.
+    </p>
+    <div class="fadeInUp delay-2" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="mailto:a82802237@gmail.com" class="btn-white">이메일 문의하기</a>
+      <a href="https://instagram.com/careersnack.mag" target="_blank" class="btn-white" style="background:transparent;border:2px solid white;color:white;">인스타그램 방문</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrapper">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">AI<span>인간경영</span>연구소</div>
+        <p class="footer-desc">
+          AI 시대에도 변하지 않는 인간 경영의 본질을 연구합니다.<br>
+          기술과 사람, 둘 다 이해하는 경영 연구소.
+        </p>
+      </div>
+      <div class="footer-links">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#about">연구소 소개</a></li>
+          <li><a href="#service">서비스 안내</a></li>
+          <li><a href="#column">칼럼</a></li>
+          <li><a href="https://thebest-f.blogspot.com" target="_blank">블로그</a></li>
+          <li><a href="https://instagram.com/careersnack.mag" target="_blank">인스타그램</a></li>
+          <li><a href="mailto:a82802237@gmail.com">문의하기</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <address>
+        AI인간경영연구소 | 대표 : 이현정 | 문의 : a82802237@gmail.com<br>
+        Copyright &copy; 2024 AI인간경영연구소. All rights reserved.
+      </address>
+      <span>www.thebest-f.com</span>
+    </div>
+  </div>
+</footer>
+
+<!-- TOP 버튼 -->
+<div class="top-btn" id="topBtn" onclick="scrollToTop()">&uarr;</div>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

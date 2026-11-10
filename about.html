@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="description" content="AI인간경영연구소 소개 - AI 시대 인간 중심 경영의 본질을 연구합니다.">
+  <title>연구소 소개 | AI인간경영연구소</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="mainHeader">
+  <div class="wrapper">
+    <h1><a href="/">AI<span>인간경영</span>연구소</a></h1>
+    <nav>
+      <ul>
+        <li><a href="/about" style="color:var(--primary)">연구소는?</a></li>
+        <li class="has-sub"><a href="/service">서비스 소개</a>
+          <ul class="submenu">
+            <li><a href="/service">AI 경영 컨설팅</a></li>
+            <li><a href="/service">조직 심리 분석</a></li>
+            <li><a href="/service">리더십 개발</a></li>
+          </ul>
+        </li>
+        <li><a href="/column">칼럼</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li class="nav-cta"><a href="/contact">문의하기</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" onclick="openMobileNav()"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav" onclick="closeMobileNavOutside(event)">
+  <div class="mobile-nav-panel">
+    <div class="mobile-nav-close" onclick="closeMobileNav()">&#10005;</div>
+    <ul>
+      <li><a href="/" onclick="closeMobileNav()">홈</a></li>
+      <li><a href="/about" onclick="closeMobileNav()">연구소는?</a></li>
+      <li><a href="/service" onclick="closeMobileNav()">서비스 소개</a></li>
+      <li><a href="/column" onclick="closeMobileNav()">칼럼</a></li>
+      <li><a href="/#faq" onclick="closeMobileNav()">FAQ</a></li>
+    </ul>
+    <div class="mobile-cta"><a href="/contact" onclick="closeMobileNav()">문의하기</a></div>
+  </div>
+</div>
+
+<!-- HERO (about page) -->
+<section class="hero" style="min-height:50vh;">
+  <div class="wrapper" style="padding:60px 24px;flex-direction:column;text-align:center;">
+    <div class="hero-text fadeInUp" style="max-width:700px;margin:0 auto;">
+      <span class="hero-badge">About Us</span>
+      <h2 style="font-size:clamp(24px,3.5vw,44px);">AI 시대에도 변하지 않는<br><strong>인간 경영의 본질</strong>을 연구합니다</h2>
+      <p>기술과 사람, 둘 다 이해하는 경영 연구소.<br>AI인간경영연구소를 소개합니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT DETAIL -->
+<section class="about-section">
+  <div class="wrapper">
+    <div class="about-inner">
+      <div class="about-text fadeInUp">
+        <span class="label">연구소 소개</span>
+        <h3>왜 <strong>AI인간경영연구소</strong>인가?</h3>
+        <p class="about-desc">
+          AI가 일자리를 대체한다고 합니다. 하지만 진짜 문제는 기술이 아닙니다.
+          <strong>사람이 변하지 않으면 기술은 무용지물</strong>입니다.
+        </p>
+        <p class="about-desc">
+          AI인간경영연구소는 AI 기술을 단순히 도입하는 것이 아니라,
+          조직 구성원의 심리, 동기, 관계를 먼저 이해하고
+          그 위에 기술을 얹는 접근법을 연구합니다.
+        </p>
+        <p class="about-desc">
+          <strong>대표 이현정</strong>은 인간 중심 경영 철학을 바탕으로
+          다양한 기업과 조직의 경영 과제를 해결해 왔습니다.
+          형식적인 컨설팅이 아닌, 현장에서 함께 호흡하는 파트너십을 지향합니다.
+        </p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="icon">&#127919;</div>
+            <div class="content">
+              <strong>미션</strong>
+              <span>AI와 인간이 공존하는 경영 환경을 만들어 갑니다</span>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="icon">&#128161;</div>
+            <div class="content">
+              <strong>비전</strong>
+              <span>모든 조직이 사람의 가치를 기반으로 성장하는 세상</span>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="icon">&#128150;</div>
+            <div class="content">
+              <strong>핵심 가치</strong>
+              <span>진정성 &middot; 현장주의 &middot; 데이터 기반 &middot; 장기 파트너십</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fadeInUp delay-2">
+        <div class="about-img-box">
+          <h4>이현정 대표</h4>
+          <p>
+            "기술은 도구입니다. 진짜 경영은 사람을 이해하는 것에서 시작됩니다."
+            <br><br>
+            AI 시대에 맞는 경영 통찰을 연구하되,
+            그 중심에는 항상 사람을 둡니다.
+            <br><br>
+            성공시킬 자신이 없는 프로젝트는 받지 않습니다.
+            함께 성장할 수 있는 파트너만 찾습니다.
+          </p>
+          <div class="about-keywords">
+            <span>AI경영 연구</span>
+            <span>조직심리학</span>
+            <span>리더십 코칭</span>
+            <span>경영 컨설팅</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="wrapper">
+    <h3 class="fadeInUp">함께할 만하다고 느끼셨다면<br><strong style="color:#32e0c4">이야기를 들려주세요</strong></h3>
+    <p class="fadeInUp delay-1">대표님의 조직과 사업에 대해 듣고 싶습니다.</p>
+    <a href="/contact" class="btn-white fadeInUp delay-2">문의하기</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrapper">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">AI<span>인간경영</span>연구소</div>
+        <p class="footer-desc">AI 시대에도 변하지 않는 인간 경영의 본질을 연구합니다.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="/about">연구소 소개</a></li>
+          <li><a href="/service">서비스 안내</a></li>
+          <li><a href="/column">칼럼</a></li>
+          <li><a href="https://thebest-f.blogspot.com" target="_blank">블로그</a></li>
+          <li><a href="https://instagram.com/careersnack.mag" target="_blank">인스타그램</a></li>
+          <li><a href="mailto:a82802237@gmail.com">문의하기</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <address>AI인간경영연구소 | 대표 : 이현정 | 문의 : a82802237@gmail.com<br>Copyright &copy; 2024 AI인간경영연구소. All rights reserved.</address>
+      <span>www.thebest-f.com</span>
+    </div>
+  </div>
+</footer>
+
+<div class="top-btn" id="topBtn" onclick="scrollToTop()">&uarr;</div>
+<script src="/js/main.js"></script>
+</body>
+</html>

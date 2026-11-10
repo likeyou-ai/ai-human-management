@@ -1,0 +1,9 @@
+{
+  "name": "ai-human-management",
+  "version": "1.0.0",
+  "description": "AI인간경영연구소 - AI 시대 인간 중심 경영",
+  "private": true,
+  "scripts": {
+    "start": "npx serve ."
+  }
+}

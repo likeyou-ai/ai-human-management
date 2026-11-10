@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="description" content="AI인간경영연구소에 문의하세요. 이메일: a82802237@gmail.com">
+  <title>문의하기 | AI인간경영연구소</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .contact-form-section { padding: 80px 0; background: var(--bg-light); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; max-width: 900px; margin: 0 auto; }
+    .contact-info { display: flex; flex-direction: column; gap: 28px; }
+    .contact-info-card { background: white; border: 1px solid #e5e7eb; border-radius: 16px; padding: 28px; }
+    .contact-info-card .ci-icon { font-size: 28px; margin-bottom: 12px; }
+    .contact-info-card h4 { font-size: 16px; font-weight: 700; color: var(--text-dark); margin-bottom: 8px; }
+    .contact-info-card p { font-size: 14px; color: var(--text-light); line-height: 1.7; }
+    .contact-info-card a { color: var(--primary); font-weight: 600; }
+    .contact-form { background: white; border-radius: 16px; padding: 36px; border: 1px solid #e5e7eb; }
+    .contact-form h4 { font-size: 18px; font-weight: 700; margin-bottom: 24px; color: var(--text-dark); }
+    .form-group { margin-bottom: 18px; }
+    .form-group label { display: block; font-size: 13px; font-weight: 600; color: var(--text-mid); margin-bottom: 6px; }
+    .form-group input, .form-group textarea, .form-group select {
+      width: 100%; padding: 12px 16px; border: 1px solid #e5e7eb; border-radius: 10px;
+      font-size: 14px; font-family: 'Noto Sans KR', sans-serif; color: var(--text-dark);
+      transition: border-color 0.2s; outline: none; background: var(--bg-light);
+    }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--primary); }
+    .form-group textarea { min-height: 120px; resize: vertical; }
+    .form-submit {
+      display: block; width: 100%; padding: 14px; background: var(--primary); color: white;
+      border: none; border-radius: 12px; font-size: 15px; font-weight: 700; cursor: pointer;
+      font-family: 'Noto Sans KR', sans-serif; transition: background 0.2s;
+    }
+    .form-submit:hover { background: var(--primary-dark); }
+    .form-note { margin-top: 12px; font-size: 12px; color: var(--text-light); text-align: center; }
+    @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<header id="mainHeader">
+  <div class="wrapper">
+    <h1><a href="/">AI<span>인간경영</span>연구소</a></h1>
+    <nav>
+      <ul>
+        <li><a href="/about">연구소는?</a></li>
+        <li class="has-sub"><a href="/service">서비스 소개</a>
+          <ul class="submenu">
+            <li><a href="/service">AI 경영 컨설팅</a></li>
+            <li><a href="/service">조직 심리 분석</a></li>
+            <li><a href="/service">리더십 개발</a></li>
+          </ul>
+        </li>
+        <li><a href="/column">칼럼</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li class="nav-cta"><a href="/contact" style="background:var(--primary-dark) !important;">문의하기</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" onclick="openMobileNav()"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav" onclick="closeMobileNavOutside(event)">
+  <div class="mobile-nav-panel">
+    <div class="mobile-nav-close" onclick="closeMobileNav()">&#10005;</div>
+    <ul>
+      <li><a href="/" onclick="closeMobileNav()">홈</a></li>
+      <li><a href="/about" onclick="closeMobileNav()">연구소는?</a></li>
+      <li><a href="/service" onclick="closeMobileNav()">서비스 소개</a></li>
+      <li><a href="/column" onclick="closeMobileNav()">칼럼</a></li>
+    </ul>
+    <div class="mobile-cta"><a href="/contact" onclick="closeMobileNav()">문의하기</a></div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" style="min-height:50vh;">
+  <div class="wrapper" style="padding:60px 24px;flex-direction:column;text-align:center;">
+    <div class="hero-text fadeInUp" style="max-width:700px;margin:0 auto;">
+      <span class="hero-badge">Contact</span>
+      <h2 style="font-size:clamp(24px,3.5vw,44px);">문의하기</h2>
+      <p>대표님의 조직 이야기를 들려주세요.<br>성실히 적어주신 문의에 먼저 회신드립니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="contact-form-section">
+  <div class="wrapper">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-info-card fadeInUp">
+          <div class="ci-icon">&#9993;</div>
+          <h4>이메일</h4>
+          <p><a href="mailto:a82802237@gmail.com">a82802237@gmail.com</a></p>
+          <p>영업일 기준 1~2일 내 회신드립니다.</p>
+        </div>
+        <div class="contact-info-card fadeInUp delay-1">
+          <div class="ci-icon">&#128247;</div>
+          <h4>인스타그램</h4>
+          <p><a href="https://instagram.com/careersnack.mag" target="_blank">@careersnack.mag</a></p>
+          <p>DM으로도 문의 가능합니다.</p>
+        </div>
+        <div class="contact-info-card fadeInUp delay-2">
+          <div class="ci-icon">&#128220;</div>
+          <h4>블로그</h4>
+          <p><a href="https://thebest-f.blogspot.com" target="_blank">thebest-f.blogspot.com</a></p>
+          <p>AI인간경영 칼럼과 인사이트를 확인하세요.</p>
+        </div>
+      </div>
+      <div class="contact-form fadeInUp delay-1">
+        <h4>문의 양식</h4>
+        <form action="https://formsubmit.co/a82802237@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="AI인간경영연구소 홈페이지 문의">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://www.thebest-f.com/contact?sent=true">
+          <div class="form-group">
+            <label>이름 / 회사명 *</label>
+            <input type="text" name="name" placeholder="예: 홍길동 / (주)ABC" required>
+          </div>
+          <div class="form-group">
+            <label>이메일 *</label>
+            <input type="email" name="email" placeholder="회신 받으실 이메일" required>
+          </div>
+          <div class="form-group">
+            <label>연락처</label>
+            <input type="tel" name="phone" placeholder="010-0000-0000">
+          </div>
+          <div class="form-group">
+            <label>관심 서비스</label>
+            <select name="service">
+              <option value="">선택해주세요</option>
+              <option value="AI 경영 컨설팅">AI 경영 전환 컨설팅</option>
+              <option value="조직 심리/리더십">조직 심리 &amp; 리더십 개발</option>
+              <option value="교육/강연">AI인간경영 교육&middot;강연</option>
+              <option value="기타">기타 문의</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>문의 내용 *</label>
+            <textarea name="message" placeholder="현재 조직 상황, 고민, 기대하는 방향 등을 자유롭게 적어주세요." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">문의 보내기</button>
+          <p class="form-note">성실한 문의에 먼저 회신드립니다. 문의 양식을 자세히 적어주시면 더 빠른 답변이 가능합니다.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrapper">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">AI<span>인간경영</span>연구소</div>
+        <p class="footer-desc">AI 시대에도 변하지 않는 인간 경영의 본질을 연구합니다.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="/about">연구소 소개</a></li>
+          <li><a href="/service">서비스 안내</a></li>
+          <li><a href="/column">칼럼</a></li>
+          <li><a href="https://thebest-f.blogspot.com" target="_blank">블로그</a></li>
+          <li><a href="https://instagram.com/careersnack.mag" target="_blank">인스타그램</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <address>AI인간경영연구소 | 대표 : 이현정 | 문의 : a82802237@gmail.com<br>Copyright &copy; 2024 AI인간경영연구소. All rights reserved.</address>
+      <span>www.thebest-f.com</span>
+    </div>
+  </div>
+</footer>
+
+<div class="top-btn" id="topBtn" onclick="scrollToTop()">&uarr;</div>
+<script src="/js/main.js"></script>
+<script>
+  // Check if form was submitted
+  if (window.location.search.includes('sent=true')) {
+    alert('문의가 성공적으로 전송되었습니다! 빠른 시일 내에 회신드리겠습니다.');
+    window.history.replaceState({}, document.title, '/contact');
+  }
+</script>
+</body>
+</html>
